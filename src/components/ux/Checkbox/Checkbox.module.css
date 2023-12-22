@@ -1,0 +1,62 @@
+.checkboxArea {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	cursor: pointer;
+}
+
+.title {
+	font-size: 1.1rem;
+	font-weight: 400;
+	color: var(--text-color);
+	transition: all 0.2s ease-in-out;
+}
+
+.checkboxArea:hover .title {
+	opacity: 0.7;
+}
+
+.check {
+	display: flex;
+}
+
+.checkIcon {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.7rem;
+	height: 1.7rem;
+	font-size: 1.3rem;
+}
+
+.checkmark[type='checkbox'] {
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: var(--bg-color-second);
+	color: var(--text-color);
+	width: 1.7rem;
+	height: 1.7rem;
+	border: 2px solid var(--text-color);
+	border-radius: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+}
+
+/* .checkmark[type='checkbox']:hover {
+	opacity: 0.7;
+} */
+
+.checkmark[type='checkbox']:disabled {
+	background-color: var(--text-color);
+	opacity: 0.6;
+}
+
+.checkmark[type='checkbox']:disabled ~ .checkIcon {
+	color: var(--bg-color);
+}

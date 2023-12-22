@@ -1,0 +1,19 @@
+@import './reset.css';
+@import './fonts.css';
+@import './variables.css';
+
+body {
+	background-color: var(--bg-color);
+	color: var(--text-color);
+	font-family: var(--font-main);
+	font-weight: var(--font-weight);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	padding: 0 calc(50% - 250px);
+	margin: 0 auto;
+}

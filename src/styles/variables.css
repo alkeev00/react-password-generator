@@ -1,0 +1,11 @@
+:root {
+	/* typography */
+	--font-main: 'Nunito', sans-serif;
+	--font-weight: 400;
+
+	/* colors */
+	--bg-color: #111111;
+	--bg-color-second: #222222;
+	--text-color: #eeeeee;
+	--border-hover-color: #858585;
+}
